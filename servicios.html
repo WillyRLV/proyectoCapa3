@@ -6,99 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartas de Servicios</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public\css\servicios.css"> 
     <script src="public\js\servicios.js"></script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        body {
-            font-family: 'Lato', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            max-width: 1000px;
-        }
-
-        .card {
-            background-color: #c5ceae;
-            border-radius: 8px;
-            border: 4px solid #00a7e1;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            text-align: center;
-            width: 300px;
-            height: 400px;
-            /* Ajusta la altura para acomodar las imágenes */
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            position: relative;
-        }
-
-        .card h3 {
-            color: #333;
-            font-family: 'Lato', sans-serif;
-        }
-
-        .card p {
-            color: #666;
-            font-family: 'Lato', sans-serif;
-        }
-
-        .card img {
-            position: flex;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
-            mix-blend-mode: multiply;
-            opacity: 0.9;
-        }
-        .card.show-info {
-    height: auto; /* Permite que la tarjeta se ajuste automáticamente */
-}
-        /* responsivo */
-        /*movil*/
-        @media screen and (max-width:767px) {
-            body {
-                background-color: red;
-            }
-
-        }
-
-        /* tablet */
-
-        @media screen and (min-width:768px) and (max-width:1023px) {
-            body {
-                background-color: rgb(0, 255, 98);
-            }
-
-        }
-
-        /* pc */
-
-        @media screen and (min-width:1024px) {
-            body {
-                background-color: #176585;
-            }
-
-        }
-    </style>
 </head>
 
 <body>
@@ -107,7 +17,9 @@
     <div class="container">
         <div class="card">
             <h3>Recolección de Datos</h3>
-            <img src="public\img\imagenes_services\encuesta.png" alt="Imagen de servicio 1">
+            <br>
+            <img src="public\img\imagenes_services\encuesta1.png" alt="Imagen de servicio 1">
+            <br> 
             <button class="btn-show-info">Mostrar Información</button>
             <div class="card-info" style="display: none;">
                 <p>Obtención de datos relevantes para tu empresa</p>
@@ -115,7 +27,9 @@
         </div>
         <div class="card">
             <h3>Proceso en Tiempo Real</h3>
-            <img src="public\img\imagenes_services\cronometro1.png" alt="Imagen de servicio 2">
+            <br>
+            <img src="public\img\imagenes_services\cronometro3.png" alt="Imagen de servicio 2">
+            <br>
             <button class="btn-show-info">Mostrar Información</button>
             <div class="card-info" style="display: none;">
                 <p>Modelos, métodos y técnicas para tu compañía</p>
@@ -124,7 +38,9 @@
         </div>
         <div class="card">
             <h3>Análitica Avanzada</h3>
+            <br>
             <img src="public\img\imagenes_services\analisis.png" alt="Imagen de servicio 3">
+            <br>
             <button class="btn-show-info">Mostrar Información</button>
             <div class="card-info" style="display: none;">
                 <p>Información adicional sobre la Analítica Avanzada</p>
@@ -137,7 +53,9 @@
     <div class="container">
         <div class="card">
             <h3>Poll de Talento</h3>
+            <br>
             <img src="public\img\imagenes_services\casa.png" alt="Imagen de línea de negocio 1">
+            <br>
             <button class="btn-show-info">Mostrar Información</button>
             <div class="card-info" style="display: none;">
                 <ul class="pl-3">
@@ -149,7 +67,9 @@
         </div>
         <div class="card">
             <h3>Entrenamiento y Capacitación</h3>
+            <br>
             <img src="public\img\imagenes_services\capacitacion.png" alt="Imagen de línea de negocio 2">
+            <br>
             <button class="btn-show-info">Mostrar Información</button>
             <div class="card-info" style="display: none;">
                 <ul class="pl-3">
@@ -161,7 +81,9 @@
         </div>
         <div class="card">
             <h3>Procesos GDH</h3>
+            <br>
             <img src="public\img\imagenes_services\personas.jpg" alt="Imagen de línea de negocio 3">
+            <br>
             <button class="btn-show-info">Mostrar Información</button>
             <div class="card-info" style="display: none;">
                 <ul class="pl-3">
