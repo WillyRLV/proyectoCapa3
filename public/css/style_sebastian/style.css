@@ -12,11 +12,13 @@ body{
     display:flex ;
     justify-content: center;
     text-transform: uppercase;
+    align-items: center;
 }
 
 .puntoAmarillo{
     height: 25px;
     border: 2px solid;
+    margin: 0px 5px 0px 10px;
     color: #bfaf00;
 }
 
@@ -25,7 +27,7 @@ body{
 }
 
 /*Second Part*/
-.cuadroContent{
+#cuadroContent{
     text-align: center;
     color: #fff;
     display: flex;
@@ -84,7 +86,11 @@ ul li{
     margin-bottom: 5px;
 }
 
-/*Equipo*/
+
+/*Third part*/
+#equipo .puntoAmarillo{
+    color: #176585;
+}
 
 .perfiles{
     display: grid;
@@ -140,6 +146,8 @@ ul li{
     margin-bottom: 70px;
 }
 
+
+/*Adaptable*/
 @media (max-width: 500px) {
     .proposito, .valores{
         width: 250px;
