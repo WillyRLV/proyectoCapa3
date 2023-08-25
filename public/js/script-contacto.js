@@ -6,11 +6,13 @@ formulario.onsubmit = (e) => {
     var apellido = e.target.apellido.value;
     var correo = e.target.correo.value;
     var telefono = e.target.telefono.value;
+    var comentario = e.target.comentario.value;
     alert(
         "Información de formulario: \n" +
         "Nombre: " + nombre + "\n" +
         "Apellido: " + apellido + "\n" +
         "Correo: " + correo + "\n" +
-        "Teléfono: " + telefono
+        "Teléfono: " + telefono + "\n" + 
+        "Comentario: " + comentario
     );
 }

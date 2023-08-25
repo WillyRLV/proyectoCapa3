@@ -68,6 +68,11 @@ div.fila i{
     color: #900c3f;
 }
 
+div.fila p{
+    color: gray;
+    text-shadow: 1px 1px 3px gray;
+}
+
 .conjunto-input{
     position: relative;
     width: 60%;
@@ -129,14 +134,14 @@ div.cabecera img{
     font-weight: 300;
 }
 
-.justificar-derecha{
-    justify-content: right;
+.justificar-between{
+    justify-content: space-between;
 }
 
 button.btn{
     height: 35px;
     width: 80px;
-    border-radius: 10px;
+    border-radius: 10px 0 10px 0;
     border: none;
     background: linear-gradient(45deg,#900c3f, #ab5475, #900c3f );
     color: white;
