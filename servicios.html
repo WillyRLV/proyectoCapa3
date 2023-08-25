@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartas de Servicios</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1000px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .card h3 {
+            color: #333;
+        }
+
+        .card p {
+            color: #666;
+        }
+
+         /* responsivo */
+    /*movil*/
+    @media screen and (max-width:767px) {
+        body {
+            background-color: red;
+        }
+
+    }
+
+    /* tablet */
+
+    @media screen and (min-width:768px) and (max-width:1023px) {
+        body {
+            background-color: rgb(0, 255, 98);
+        }
+
+    }
+
+    /* pc */
+
+    @media screen and (min-width:1024px) {
+        body {
+            background-color: rgb(0, 195, 255);
+        }
+
+    }
+    </style>
+</head>
+
+<body>
+    <h1>NUESTROS SERVICIOS</h1>
+    <br>
+    <div class="container">
+        <div class="card">
+            <h3>Recolección de Datos</h3>
+            <img src="public\img\imagenes_services\encuesta.png" alt="Imagen de servicio 1">
+            <p>Descripción breve del servicio</p>
+        </div>
+        <div class="card">
+            <h3>Proceso en Tiempo Real</h3>
+            <img src="public\img\imagenes_services\cronometro1.png" alt="Imagen de servicio 2">
+            <p>Descripción breve del servicio</p>
+        </div>
+        <div class="card">
+            <h3>Análitica Avanzada</h3>
+            <img src="public\img\imagenes_services\analisis.png" alt="Imagen de servicio 3">
+            <p>Descripción breve del servicio</p>
+        </div>
+    </div>
+    <h1>LÍNEAS DE NEGOCIO</h1>
+    <div class="container">
+        <div class="card">
+            <h3>Poll de Talento</h3>
+            <img src="public\img\imagenes_services\casa.png" alt="Imagen de línea de negocio 1">
+            <p>Descripción breve de la línea de negocio</p>
+        </div>
+        <div class="card">
+            <h3>Entrenamiento y Capacitación</h3>
+            <img src="public\img\imagenes_services\capacitacion.png" alt="Imagen de línea de negocio 2">
+            <p>Descripción breve de la línea de negocio</p>
+        </div>
+        <div class="card">
+            <h3>Procesos GDH</h3>
+            <img src="public\img\imagenes_services\personas.jpg" alt="Imagen de línea de negocio 3">
+            <p>Descripción breve de la línea de negocio</p>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
