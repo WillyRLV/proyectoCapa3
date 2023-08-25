@@ -84,6 +84,8 @@ ul li{
     margin-bottom: 5px;
 }
 
+/*Equipo*/
+
 .perfiles{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -106,10 +108,10 @@ ul li{
 }
 
 .contImagen img{
-    width: 210px;
     height: 280px;
     object-fit: cover;
     border-radius: 5px;
+    background-color: #fff;
 }
 
 .perfil:hover .contImagen{
@@ -118,10 +120,24 @@ ul li{
 
 .textPefil{
     position: relative;
-    margin-top: -65px; 
-    font-size: 14px;
+    margin-top: -75px; 
     color: #333;
     z-index: -1;
+}
+
+.nombrePerfil{
+    font-weight: bold;
+    color: #0e2430;
+    margin-bottom: 0;
+}
+
+.cargoPerfil{
+    color: #900c3f;
+    margin-top: 0;
+}
+
+#equipo{
+    margin-bottom: 70px;
 }
 
 @media (max-width: 500px) {
@@ -129,17 +145,30 @@ ul li{
         width: 250px;
         height: 300px;
     }
+
+    .perfiles{
+        grid-template-columns:  1fr;
+    }
+
 }
 
 @media (min-width: 501px) and (max-width:767px){
     .proposito, .valores{
         width: 400px;
     }
+
+    .perfiles{
+        grid-template-columns:  repeat(2,1fr);
+    }
 }
 
 @media (min-width: 768px) and (max-width:1023px) {
     .proposito, .valores{
         width: 600px;
+    }
+
+    .perfiles{
+        grid-template-columns:  repeat(2,1fr);
     }
 }
 
