@@ -1,0 +1,91 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+}
+
+.card {
+    background-color: #c5ceae;
+    border-radius: 8px;
+    border: 4px solid #00a7e1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    /* Ajusta la altura para acomodar las imágenes */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.card h3 {
+    color: #333;
+    font-family: 'Lato', sans-serif;
+}
+
+.card p {
+    color: #666;
+    font-family: 'Lato', sans-serif;
+}
+
+.card img {
+    position: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    mix-blend-mode: multiply;
+    opacity: 0.9;
+}
+.card.show-info {
+height: auto; /* Permite que la tarjeta se ajuste automáticamente */
+}
+/* responsivo */
+/*movil*/
+@media screen and (max-width:767px) {
+    body {
+        background-color: red;
+    }
+
+}
+
+/* tablet */
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    body {
+        background-color: rgb(0, 255, 98);
+    }
+
+}
+
+/* pc */
+
+@media screen and (min-width:1024px) {
+    body {
+        background-color: #176585;
+    }
+
+}
