@@ -18,17 +18,24 @@ body{
     text-align: center;
 }
 
+
+.proposito, .valores{
+    background-color: black;
+    padding: 80px 10px 160px 10px;
+    border-radius: 10px;
+}
+
 .proposito{
-    background-color: black;
+    
 }
 
-.valores{
-    background-color: black;
-}
-
-.cuadro{
+.cuadroContent{
     text-align: center;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: auto;
 }
 
 ul{
@@ -38,3 +45,18 @@ ul{
 li{
     list-style-type: none;
 }
+
+p, h3{
+  margin: 0px;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.pPro{
+    margin: 20px 15px ;
+}
+
