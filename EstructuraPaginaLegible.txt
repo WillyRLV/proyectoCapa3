@@ -1,0 +1,4 @@
+1.-organizar la estructura de archivos
+2.-creacion de elementos html de manera correcta
+3.-documentar  codigo
+4.-hacer pruebas responsivas.
