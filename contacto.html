@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/css/estilos_contacto.css">
+    <title>Contacto</title>
+  </head>
+  <body>
+
+    <div class="contenedor">
+        <div class="contenedor-formulario estilo-input">
+            
+            <div class="cabecera">
+                <h1 id="titulo">Contacto</h1>
+                <img src="https://hyfconsult.com/components/img/logo2.png" alt="LogoH&F">
+            </div>
+
+            <!--Inputs-->
+            <div class="fila">
+                <div class="conjunto-input">
+                    <i class="fa-solid fa-mountain-sun"></i>
+                    <input type="text" placeholder="Nombre" id="nombre" required>
+                </div>
+                <div class="conjunto-input">
+                    <i class="fa-solid fa-mountain-sun"></i>
+                    <input type="text" placeholder="Apellido" id="apellido" required>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="conjunto-input">
+                    <i class="fa-solid fa-mountain-sun"></i>
+                    <input type="email" placeholder="Correo" id="correo" required>
+                </div>
+                <div class="conjunto-input">
+                    <i class="fa-solid fa-mountain-sun"></i>
+                    <input type="number" placeholder="Teléfono" id="telefono" required>
+                </div>
+            </div>
+
+            <div class="fila">
+                <i class="fa-solid fa-mountain-sun"></i>
+                <textarea name="comentario" id="comentario" rows="12" placeholder="Escribe tu comentario" required></textarea>
+            </div>
+
+            <div class="fila justificar-derecha">
+                <button type="submit" id="enviar-formulario" class="btn">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/a7fc31cc6a.js" crossorigin="anonymous"></script>
+  </body>
 </html>
