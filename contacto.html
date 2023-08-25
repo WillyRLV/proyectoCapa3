@@ -17,39 +17,41 @@
             </div>
 
             <!--Inputs-->
-            <div class="fila">
-                <div class="conjunto-input">
-                    <i class="fa-solid fa-mountain-sun"></i>
-                    <input type="text" placeholder="Nombre" id="nombre" required>
+            <form id="formulario">
+                <div class="fila">
+                    <div class="conjunto-input">
+                        <i class="fa-solid fa-mountain-sun"></i>
+                        <input type="text" placeholder="Nombre" id="nombre" required>
+                    </div>
+                    <div class="conjunto-input">
+                        <i class="fa-solid fa-mountain-sun"></i>
+                        <input type="text" placeholder="Apellido" id="apellido" required>
+                    </div>
                 </div>
-                <div class="conjunto-input">
-                    <i class="fa-solid fa-mountain-sun"></i>
-                    <input type="text" placeholder="Apellido" id="apellido" required>
+                <div class="fila">
+                    <div class="conjunto-input">
+                        <i class="fa-solid fa-mountain-sun"></i>
+                        <input type="email" placeholder="Correo" id="correo" required>
+                    </div>
+                    <div class="conjunto-input">
+                        <i class="fa-solid fa-mountain-sun"></i>
+                        <input type="number" placeholder="Teléfono" id="telefono" required>
+                    </div>
                 </div>
-            </div>
-            <div class="fila">
-                <div class="conjunto-input">
+    
+                <div class="fila">
                     <i class="fa-solid fa-mountain-sun"></i>
-                    <input type="email" placeholder="Correo" id="correo" required>
+                    <textarea name="comentario" id="comentario" rows="12" placeholder="Escribe tu comentario" required></textarea>
                 </div>
-                <div class="conjunto-input">
-                    <i class="fa-solid fa-mountain-sun"></i>
-                    <input type="number" placeholder="Teléfono" id="telefono" required>
+    
+                <div class="fila justificar-derecha">
+                    <button type="submit" id="enviar-formulario" class="btn">Enviar</button>
                 </div>
-            </div>
-
-            <div class="fila">
-                <i class="fa-solid fa-mountain-sun"></i>
-                <textarea name="comentario" id="comentario" rows="12" placeholder="Escribe tu comentario" required></textarea>
-            </div>
-
-            <div class="fila justificar-derecha">
-                <button type="submit" id="enviar-formulario" class="btn">Enviar</button>
-            </div>
+            </form>
         </div>
     </div>
 
-
+    <script type="text/javascript" src="public/js/script-contacto.js"></script>
     <script src="https://kit.fontawesome.com/a7fc31cc6a.js" crossorigin="anonymous"></script>
   </body>
 </html>
