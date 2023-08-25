@@ -2,6 +2,12 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
+#about{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+/*First Part*/
 .subTitulo{
     display:flex ;
     justify-content: center;
@@ -18,17 +24,7 @@ body{
     text-align: center;
 }
 
-
-.proposito, .valores{
-    background-color: black;
-    padding: 80px 10px 160px 10px;
-    border-radius: 10px;
-}
-
-.proposito{
-    
-}
-
+/*Second Part*/
 .cuadroContent{
     text-align: center;
     color: #fff;
@@ -36,6 +32,43 @@ body{
     flex-direction: column;
     gap: 40px;
     margin: auto;
+}
+
+.proposito, .valores{
+    position: relative; 
+    width: 250px;
+    height: 300px;
+    border-radius: 10px; 
+    overflow: hidden;     
+}
+
+.imgPro, .imgVa{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: brightness(40%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.contCuadro{
+    position: relative;
+    pointer-events: none;
+}
+
+.imgPro{
+    background-image: url(../../img/img_sebas/img2.jpg);
+}
+
+.imgVa{
+    background-image: url(../../img/img_sebas/img4.jpg);
+}
+
+.imgPro:hover,.imgVa:hover{
+    transform: scale(1.3);
 }
 
 ul{
@@ -50,11 +83,6 @@ p, h3{
   margin: 0px;
 }
 
-#about{
-    display: flex;
-    flex-direction: column;
-    gap: 70px;
-}
 
 .pPro{
     margin: 20px 15px ;
