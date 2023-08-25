@@ -1,0 +1,19 @@
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 5000;
+}
+
+.subTitulo{
+    position: relative;
+    display:flex ;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.puntoAmarillo{
+    position: absolute;
+    height: 25px;
+    border: 2px solid;
+    margin: 0;
+    color: #bfaf00;
+}
