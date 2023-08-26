@@ -164,4 +164,13 @@ button.btn:active{
         width: 80%;
         border-radius: 30px;
     }
+
+    div.fila{
+        flex-direction: column;
+    }
+    
+    .conjunto-input{
+        width: 100%;
+    }
 }
+
