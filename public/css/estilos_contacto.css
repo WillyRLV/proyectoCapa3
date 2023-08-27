@@ -58,7 +58,7 @@
 
 .fila textarea{
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0px;
     padding: 10px;
     padding-left: 35px;
     border: 1px solid #176585;
@@ -67,7 +67,7 @@
 
 .fila textarea:focus{
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0px;
     padding: 10px;
     padding-left: 35px;
     border: 1px solid #176585;
@@ -91,7 +91,7 @@ div.fila p{
 }
 
 div.estilo-input .fila .conjunto-input input[type = "text"]{
-    border-radius: 10px;
+    border-radius: 0px;
     height: 40px;
     width: 100%;
     padding-left: 35px;
@@ -100,7 +100,7 @@ div.estilo-input .fila .conjunto-input input[type = "text"]{
 }
 
 div.estilo-input .fila .conjunto-input input[type = "email"]{
-    border-radius: 10px;
+    border-radius: 0px;
     height: 40px;
     width: 100%;
     padding-left: 35px;
@@ -109,7 +109,7 @@ div.estilo-input .fila .conjunto-input input[type = "email"]{
 }
 
 div.estilo-input .fila .conjunto-input input[type = "number"]{
-    border-radius: 10px;
+    border-radius: 0px;
     height: 40px;
     width: 100%;
     padding-left: 35px;
@@ -130,7 +130,6 @@ div.estilo-input .fila .conjunto-input i{
 
 div.cabecera{
     background: linear-gradient(45deg,#176585, #24a0d1, #176585 );
-    border-radius: 15px 15px 0 0;
     padding: 10px;
     color: white;
     display: flex;
