@@ -11,44 +11,91 @@
     <div class="contenedor">
         <div class="contenedor-formulario estilo-input">
             
+            <!--
             <div class="cabecera">
                 <h1 id="titulo">Contacto</h1>
                 <img src="https://hyfconsult.com/components/img/logo2.png" alt="LogoH&F">
             </div>
+            -->
 
-            <!--Inputs-->
-            <form id="formulario">
-                <div class="fila">
-                    <div class="conjunto-input">
-                        <i class="fa-solid fa-user"></i>
-                        <input type="text" placeholder="Nombre" id="nombre" required>
+            
+            <!--Contenedor de secciones-->
+            <div class="contenedor-secciones">
+
+                <div class="img-form">
+                    <!--Contenedor Imagen-->
+                    <div class="contenedor-img">
+                        <div class="logo">
+                            <a href="/" class="">
+                                <img class="img-logo" src="https://hyfconsult.com/components/img/logo2.png" alt="LogoH&F">
+                            </a>
+                            <h7 class="d-inline-block texto-logo">
+                                PEOPLE ANALYTICS<br/>   
+                                AND CONSULTING
+                            </h7>
+                        </div>
+
                     </div>
-                    <div class="conjunto-input">
-                        <i class="fa-regular fa-user"></i>
-                        <input type="text" placeholder="Apellido" id="apellido" required>
+
+                    <!--Inputs-->
+                    <form id="formulario" class="form-contacto">
+                        <div class="fila">
+                            <div class="conjunto-input">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" placeholder="Nombre" id="nombre" required>
+                            </div>
+                            <div class="conjunto-input">
+                                <i class="fa-regular fa-user"></i>
+                                <input type="text" placeholder="Apellido" id="apellido" required>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="conjunto-input">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="email" placeholder="Correo" id="correo" required>
+                            </div>
+                            <div class="conjunto-input">
+                                <i class="fa-solid fa-mobile"></i>
+                                <input type="number" placeholder="Teléfono" id="telefono" required>
+                            </div>
+                        </div>
+            
+                        <div class="fila">
+                            <i class="fa-solid fa-comment"></i>
+                            <textarea name="comentario" id="comentario" rows="12" placeholder="Escribe tu comentario" required></textarea>
+                        </div>
+            
+                        <div class="fila justificar-between">
+                            <p>¡Gracias por tu mensaje!</p>
+                            <button type="submit" id="enviar-formulario" class="btn">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!--Contenedor-opciones-->
+                <div class="contenedor-opciones">
+                    <h1>Síguenos:</h1>
+                    <div class="div-iconos">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="fila">
-                    <div class="conjunto-input">
-                        <i class="fa-solid fa-envelope"></i>
-                        <input type="email" placeholder="Correo" id="correo" required>
-                    </div>
-                    <div class="conjunto-input">
-                        <i class="fa-solid fa-mobile"></i>
-                        <input type="number" placeholder="Teléfono" id="telefono" required>
-                    </div>
-                </div>
-    
-                <div class="fila">
-                    <i class="fa-solid fa-comment"></i>
-                    <textarea name="comentario" id="comentario" rows="12" placeholder="Escribe tu comentario" required></textarea>
-                </div>
-    
-                <div class="fila justificar-between">
-                    <p>¡Gracias por tu mensaje!</p>
-                    <button type="submit" id="enviar-formulario" class="btn">Enviar</button>
-                </div>
-            </form>
+
+            </div>
+
         </div>
     </div>
 
