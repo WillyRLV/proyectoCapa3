@@ -66,7 +66,7 @@ height: auto; /* Permite que la tarjeta se ajuste automáticamente */
 /*movil*/
 @media screen and (max-width:767px) {
     body {
-        background-color:  #b9c3c4;
+        background-color:  #c5ceae;
     }
 
 }
@@ -75,7 +75,7 @@ height: auto; /* Permite que la tarjeta se ajuste automáticamente */
 
 @media screen and (min-width:768px) and (max-width:1023px) {
     body {
-        background-color: #900c3f  ;
+        background-color: #c5ceae  ;
     }
 
 }
