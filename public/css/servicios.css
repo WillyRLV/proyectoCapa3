@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Estilos para el cuerpo del documento */
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -16,7 +17,7 @@ body {
      background-color: transparent; 
 
 }
-
+/* Estilos para los contenedores de tarjetas */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -24,7 +25,7 @@ body {
     gap: 20px;
     max-width: 1000px;
 }
-
+/* Estilos para cada tarjeta */
 .card {
     background-color: #c5ceae;
     border-radius: 8px;
@@ -38,17 +39,17 @@ body {
     justify-content: space-between;
     position: relative;
 }
-
+/* Estilos para los títulos de las tarjetas */
 .card h3 {
     color: #333;
     font-family: 'Lato', sans-serif;
 }
-
+/* Estilos para los párrafos en las tarjetas */
 .card p {
     color: #666;
     font-family: 'Lato', sans-serif;
 }
-
+/* Estilos para las imágenes en las tarjetas */
 .card img {
     position: flex;
     top: 0;
@@ -59,8 +60,9 @@ body {
     mix-blend-mode: multiply;
     opacity: 0.9;
 }
+/* Estilos para la tarjeta cuando se muestra información adicional */
 .card.show-info {
-height: auto; /* Permite que la tarjeta se ajuste automáticamente */
+height: auto; 
 }
 /* responsivo */
 /*movil*/
