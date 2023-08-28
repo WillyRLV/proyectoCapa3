@@ -1,33 +1,34 @@
-body{
+body {
     font-family: 'Lato', sans-serif;
 }
 
-#about{
+#about {
     display: flex;
     flex-direction: column;
     gap: 70px;
 }
+
 /*First Part*/
-.subTitulo{
-    display:flex ;
+.subTitulo {
+    display: flex;
     justify-content: center;
     text-transform: uppercase;
     align-items: center;
 }
 
-.puntoAmarillo{
+.puntoAmarillo {
     height: 25px;
     border: 2px solid;
     margin: 0px 5px 0px 10px;
     color: #bfaf00;
 }
 
-.p_about{
+.p_about {
     text-align: center;
 }
 
 /*Second Part*/
-#cuadroContent{
+#cuadroContent {
     text-align: center;
     color: #fff;
     display: flex;
@@ -36,18 +37,20 @@ body{
     margin: auto;
 }
 
-.proposito, .valores{
-    position: relative; 
+.proposito,
+.valores {
+    position: relative;
     width: 250px;
     height: 300px;
-    border-radius: 10px; 
+    border-radius: 10px;
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center;     
+    justify-content: center;
 }
 
-.imgPro, .imgVa{
+.imgPro,
+.imgVa {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -58,49 +61,52 @@ body{
     transition: transform 0.3s ease-in-out;
 }
 
-.contCuadro{
+.contCuadro {
     position: relative;
     pointer-events: none;
     text-align: center;
     top: -20px;
 }
 
-.imgPro{
+.imgPro {
     background-image: url(../../img/img_sebas/img2.jpg);
 }
 
-.imgVa{
+.imgVa {
     background-image: url(../../img/img_sebas/img4.jpg);
 }
 
-.imgPro:hover,.imgVa:hover{
+.imgPro:hover,
+.imgVa:hover {
     transform: scale(1.3);
 }
 
-ul{
+ul {
     list-style-type: none;
     padding: 0;
 }
 
-ul li{
+ul li {
     margin-bottom: 5px;
 }
 
 
 /*Third part*/
-#equipo .puntoAmarillo{
+#equipo .puntoAmarillo {
     color: #176585;
 }
 
-.perfiles{
+.perfiles {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     max-width: 900px;
     margin: 0 auto;
+    padding: 0px 30px 0px 30px;
+
 }
 
-.perfil{
+.perfil {
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -108,80 +114,96 @@ ul li{
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.contImagen{
+.contImagen {
     position: relative;
     transition: transform 0.3s;
 }
 
-.contImagen img{
+.contImagen img {
     height: 280px;
     object-fit: cover;
     border-radius: 5px;
     background-color: #fff;
 }
 
-.perfil:hover .contImagen{
-    transform: translateY(-20%); 
+.perfil:hover .contImagen {
+    transform: translateY(-20%);
 }
 
-.textPefil{
+.textPefil {
     position: relative;
-    margin-top: -75px; 
+    margin-top: -75px;
     color: #333;
     z-index: -1;
 }
 
-.nombrePerfil{
+.nombrePerfil {
     font-weight: bold;
     color: #0e2430;
     margin-bottom: 0;
 }
 
-.cargoPerfil{
+.cargoPerfil {
     color: #900c3f;
     margin-top: 0;
 }
 
-#equipo{
+#equipo {
     margin-bottom: 70px;
 }
 
 
 /*Adaptable*/
 @media (max-width: 500px) {
-    .proposito, .valores{
+
+    .proposito,
+    .valores {
         width: 250px;
         height: 300px;
     }
 
-    .perfiles{
-        grid-template-columns:  1fr;
+    .perfiles {
+        grid-template-columns: 1fr;
     }
 
 }
 
-@media (min-width: 501px) and (max-width:767px){
-    .proposito, .valores{
+@media (min-width: 501px) and (max-width:767px) {
+
+    .proposito,
+    .valores {
         width: 400px;
     }
 
-    .perfiles{
-        grid-template-columns:  repeat(2,1fr);
+    .perfiles {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .perfil {
+        width: 450px;
+        margin: auto;
+
     }
 }
 
 @media (min-width: 768px) and (max-width:1023px) {
-    .proposito, .valores{
+
+    .proposito,
+    .valores {
         width: 600px;
+
     }
 
-    .perfiles{
-        grid-template-columns:  repeat(2,1fr);
+    .perfiles {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (min-width: 1024px){
-    .proposito, .valores{
+@media (min-width: 1024px) {
+
+    .proposito,
+    .valores {
         width: 900px;
     }
 }
