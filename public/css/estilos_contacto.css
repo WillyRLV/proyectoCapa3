@@ -65,6 +65,8 @@
     background-color: rgba(255, 255, 255,0.7);
 }
 
+
+
 .fila textarea:focus{
     width: 100%;
     border-radius: 0px;
@@ -90,8 +92,7 @@ div.fila p{
     width: 60%;
 }
 
-div.estilo-input .fila .conjunto-input input[type = "text"]{
-    border-radius: 0px;
+div.estilo-input .fila .conjunto-input input{
     height: 40px;
     width: 100%;
     padding-left: 35px;
@@ -99,8 +100,7 @@ div.estilo-input .fila .conjunto-input input[type = "text"]{
     background-color: rgba(255, 255, 255,0.7);
 }
 
-div.estilo-input .fila .conjunto-input input[type = "email"]{
-    border-radius: 0px;
+/* div.estilo-input .fila .conjunto-input input[type = "email"]{
     height: 40px;
     width: 100%;
     padding-left: 35px;
@@ -109,13 +109,12 @@ div.estilo-input .fila .conjunto-input input[type = "email"]{
 }
 
 div.estilo-input .fila .conjunto-input input[type = "number"]{
-    border-radius: 0px;
     height: 40px;
     width: 100%;
     padding-left: 35px;
     border: 1px solid #176585; 
     background-color: rgba(255, 255, 255,0.7);
-}
+} */
 
 div.estilo-input .fila .conjunto-input input[type = "text"]:focus{
     border-color: #176585;
@@ -239,6 +238,8 @@ button.btn:active{
     color: #0e2430;
 }
 
+
+/* responsive movil(telefones) */
 @media screen and (max-width: 767px) {
     .contenedor{
         height: auto;
