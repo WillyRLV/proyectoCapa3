@@ -1,5 +1,7 @@
+/*Importamos fuente asignada*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
+/*Estilos para todos los elementos*/
 *{
     padding: 0;
     margin: 0;
@@ -7,10 +9,7 @@
     font-family: 'Lato', sans-serif;
 }
 
-.body{
-    font-family: 'Lato', sans-serif;
-}
-
+/*Creamos un contenedor ficticio que contendrá la imagen del fondo*/
 .contenedor::before{
     content: "";
     position: fixed;
@@ -25,6 +24,7 @@
     z-index: -1;
 }
 
+/*Creamos nuestro contenedor que ocupará toda la pantalla centrando el formulario de contacto*/
 .contenedor{
     width: 100%;
     height: 100vh;
@@ -34,6 +34,7 @@
     z-index: 1;
 }
 
+/*Estilos para el contenedor padre del formulario contacto*/
 .contenedor-formulario{
     height: auto;
     width: 80%; 
@@ -46,6 +47,7 @@
     overflow: hidden;
 }
 
+/*Creamos la clase fila para distribuír mejor los elementos al centro*/
 .fila{
     position: relative;
     padding: 0 20px;
@@ -56,6 +58,7 @@
     gap: 20px;
 }
 
+/*Agregamos estilos al textarea*/
 .fila textarea{
     width: 100%;
     border-radius: 0px;
@@ -65,16 +68,7 @@
     background-color: rgba(255, 255, 255,0.7);
 }
 
-
-
-.fila textarea:focus{
-    width: 100%;
-    border-radius: 0px;
-    padding: 10px;
-    padding-left: 35px;
-    border: 1px solid #176585;
-}
-
+/*Modificamos la posición absoluta de los íconos y damos color en la clase fila (textarea)*/
 div.fila i{
     position: absolute;
     top: 10px;
@@ -82,16 +76,19 @@ div.fila i{
     color: #176585;
 }
 
+/*Agregamos estilos a la frase "Gracias por tu mensaje"*/
 div.fila p{
     color: gray;
     text-shadow: 1px 1px 3px gray;
 }
 
+/*Damos ancho al contenedor de los input*/
 .conjunto-input{
     position: relative;
     width: 60%;
 }
 
+/*Creamos un selector para dar estilos a los input*/
 div.estilo-input .fila .conjunto-input input{
     height: 40px;
     width: 100%;
@@ -116,10 +113,7 @@ div.estilo-input .fila .conjunto-input input[type = "number"]{
     background-color: rgba(255, 255, 255,0.7);
 } */
 
-div.estilo-input .fila .conjunto-input input[type = "text"]:focus{
-    border-color: #176585;
-}
-
+/*Modificamos la posición absoluta de los íconos y damos color en la clase contenedor-input (input)*/
 div.estilo-input .fila .conjunto-input i{
     position: absolute;
     top: 10px;
@@ -127,6 +121,7 @@ div.estilo-input .fila .conjunto-input i{
     color: #176585;
 }
 
+/*Damos estilos al contenedor del titulo del formulario*/
 div.cabecera{
     background: linear-gradient(45deg,#176585, #24a0d1, #176585 );
     padding: 10px;
@@ -136,18 +131,22 @@ div.cabecera{
     align-items: center;
 }
 
+/*Damos tamaño al logo de la cabecera
 div.cabecera img{
     height: 50px;
-}
+}*/
 
+/*Tamaño al id titulo*/
 #titulo{
     font-weight: 300;
 }
 
+/*Creamos una clase para asignar una justificación al contenido (Boton y texto)*/
 .justificar-between{
     justify-content: space-between;
 }
 
+/*Agregando estilos al botón*/
 button.btn{
     height: 35px;
     width: 80px;
@@ -157,24 +156,24 @@ button.btn{
     color: white;
 }
 
+/*Estilos al hover del botón*/
 button.btn:hover{
     transform: scale(1.03);
     background: linear-gradient(45deg,#155a76, #2297c5, #135974 );
 }
 
+/*Estilos al active del botón*/
 button.btn:active{
     background: linear-gradient(45deg,#176585, #24a0d1, #176585 );
 }
 
-.contenedor-secciones{
-    margin: 0;
-    padding: 0;
-}
-
+/*Agregamos ancho a la etiqueta form de contacto*/
 .form-contacto{
     /*max-height: 1000px;*/
     width: 50%;
 }
+
+/*Damos fondo al contenedor-img que tendrá en si el logo y nombre de la empresa*/
 .contenedor-img{
     background-image: url("/public/img/img-analisis-contacto.png");
     background-position: center;
@@ -182,10 +181,12 @@ button.btn:active{
     width: 50%;
 }
 
+/*Agregamos un display flex al contenedor de contenedor-img y form-contacto*/
 .img-form{
     display: flex;
 }
 
+/*Agregamos estilos al contenedor de los íconos de "Síguenos (alto, fondo y posición )"*/
 .contenedor-opciones{
     height: 20vh;
     background: linear-gradient(45deg,#176585, #24a0d1, #176585 );
@@ -197,15 +198,18 @@ button.btn:active{
     flex-direction: column;
 }
 
+/*Agregamos display flex y espacio entre los íconos del contenedor opciones*/
 .div-iconos{
     display: flex;
     gap: 15px;
 }
 
+/*Damos altura al logo*/
 .img-logo{
     height: 60px;
 }
 
+/*Centramos el contenedor de los iconos y brindamos ancho*/
 .logo{
     display: flex;
     justify-content: left;
@@ -215,25 +219,30 @@ button.btn:active{
     font-weight: 900;
 }
 
+/*Agregamos tamaño a los íconos*/
 .contenedor-opciones i{
     font-size: 30px;
 }
 
+/*Agregamos color a los íconos de opciones*/
 .contenedor-opciones a{
     color:white;
 }
 
+/*Agregamos estilos al titulo "Síguenos"*/
 .contenedor-opciones h1{
     color:white;
     font-size: 25px;
     margin-bottom: 10px;
 }
 
+/*Agregamos transición y escala a los íconos en hover*/
 .contenedor-opciones a:hover{
     transform: scale(1.2);
     transition: all 0.1s;
 }
 
+/*Agregamos color en action*/
 .contenedor-opciones a:active{
     color: #0e2430;
 }
@@ -268,6 +277,7 @@ button.btn:active{
     }
 }
 
+/*responsive tablet*/
 @media screen and (min-width: 768) and (max-height: 1023px) {
     
 }
